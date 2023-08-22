@@ -1,0 +1,65 @@
+@import "reset";
+@import "flex";
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG-Semibold.woff2") format("woff2"),
+    url("../fonts/GraphikLCG-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Graphik LCG";
+}
+
+.header {
+  padding: 34px 0;
+  border-bottom: 1px solid $light_gray;
+  .container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+}
+
+.header__wrap {
+  gap: 25px;
+  .header__nav-wrap {
+    width: 665px;
+    gap: 20px;
+  }
+  .header__logo {
+    max-width: 130px;
+  }
+  .header__ul {
+    gap: 40px;
+    font-size: $fs_15;
+    line-height: $lh_20;
+  }
+  .header__btn-wrap {
+    gap: 10px;
+    .header__btn-login {
+      @include btn(120px, 45px, $white);
+      @include font($black, 16px, 600);
+      border: 1px solid $black_gray;
+    }
+    .header__btn-free {
+      @include btn(120px, 45px, $orange);
+      @include font($white, 16px, 600);
+      border: none;
+    }
+  }
+}
