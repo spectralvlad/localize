@@ -28,11 +28,13 @@ body {
 .header {
   padding: 34px 0;
   border-bottom: 1px solid $light_gray;
-  .container {
-    max-width: 1330px;
-    margin: 0 auto;
-    padding: 0 25px;
-  }
+}
+
+.container {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 .header__wrap {
@@ -250,5 +252,54 @@ body {
   &__txt {
     @include font($black, 20px, 400);
     line-height: 1.5;
+  }
+}
+
+.photo {
+  background: $cyan;
+  width: 100%;
+  padding: 53px 75px 105px;
+  &__main-txt {
+    max-width: 920px;
+    @include font($black, 30px, 400);
+    line-height: 1.33;
+    padding-bottom: 23px;
+  }
+  &__txt-sm {
+    @include font($black, 15px, 400);
+    line-height: 1.66;
+  }
+  &__photo-man {
+    width: 310px;
+    height: 310px;
+  }
+}
+
+.software {
+  background: $beige;
+  width: 100%;
+  padding: 70px 75px 84px;
+  &__img {
+    width: 176px;
+    height: 154px;
+  }
+  &__title {
+    width: 461px;
+    @include font($black, 35px, 600);
+    line-height: 1.42;
+  }
+  &__wrapper-logo {
+    width: 481px;
+    padding: 30px 62px 22px 71px;
+    border-left: 1px solid $black;
+  }
+  &__logo-star {
+    width: 128px;
+    height: 20px;
+  }
+  &__txt {
+    @include font($black, 15px, 400);
+    line-height: 1.66;
+    letter-spacing: 0.75px;
   }
 }

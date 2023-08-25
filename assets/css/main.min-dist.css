@@ -183,12 +183,20 @@ q:after {
   gap: 30px;
 }
 
+.gap20 {
+  gap: 20px;
+}
+
 .gap23 {
   gap: 23px;
 }
 
 .gap40 {
   gap: 40px;
+}
+
+.gap67 {
+  gap: 67px;
 }
 
 @font-face {
@@ -213,8 +221,10 @@ body {
   padding: 34px 0;
   border-bottom: 1px solid #cccccc;
 }
-.header .container {
+
+.container {
   max-width: 1330px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 25px;
 }
@@ -477,4 +487,61 @@ body {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.photo {
+  background: #c9e8f2;
+  width: 100%;
+  padding: 53px 75px 105px;
+}
+.photo__main-txt {
+  max-width: 920px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.33;
+  padding-bottom: 23px;
+}
+.photo__txt-sm {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.photo__photo-man {
+  width: 310px;
+  height: 310px;
+}
+
+.software {
+  background: #dabc98;
+  width: 100%;
+  padding: 70px 75px 84px;
+}
+.software__img {
+  width: 176px;
+  height: 154px;
+}
+.software__title {
+  width: 461px;
+  color: #000000;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.42;
+}
+.software__wrapper-logo {
+  width: 481px;
+  padding: 30px 62px 22px 71px;
+  border-left: 1px solid #000000;
+}
+.software__logo-star {
+  width: 128px;
+  height: 20px;
+}
+.software__txt {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.75px;
 }
