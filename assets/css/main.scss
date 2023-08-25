@@ -63,3 +63,192 @@ body {
     }
   }
 }
+
+.main__container {
+  padding: 97px 0 192px;
+  .localize__wrap {
+    padding: 0 20px;
+    width: 1290px;
+    margin: 0 auto;
+    .localize__wrap-col {
+      gap: 50px;
+      h1 {
+        width: 552px;
+        @include font($black, 65px, 600);
+        line-height: 70px;
+      }
+      .localize__txt {
+        width: 471px;
+        @include font($black, 25px, 400);
+        line-height: 35px;
+      }
+      .localize__btn-wrap {
+        gap: 10px;
+        .localize__btn-free {
+          @include btn(160px, 60px, $orange);
+          @include font($white, 16px, 600);
+          border: none;
+        }
+        .localize__btn-demo {
+          @include btn(160px, 60px, $white);
+          @include font($black, 16px, 600);
+          border: 1px solid $black_gray;
+        }
+      }
+      .localize__text {
+        width: 369px;
+        @include font($black, 15px, 400);
+      }
+    }
+    .localize__img {
+      width: 695px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.company {
+  width: 100%;
+  padding: 108px 0 104px;
+  background: #ff9c7d;
+  display: inline-block;
+  &__title {
+    @include font($black, 35px, 600);
+    width: 720px;
+    line-height: 1.2;
+  }
+  &__logo {
+    width: 1290px;
+  }
+  &__wrap {
+    gap: 70px;
+  }
+}
+
+.process {
+  width: 1330px;
+  padding: 0 20px 250px;
+  margin: 0 auto;
+  &__top {
+    padding-top: 90px;
+  }
+  &__bottom {
+    padding: 0 0 150px;
+  }
+  &__title {
+    width: 493px;
+    @include font($black, 50px, 600);
+    line-height: 1.2;
+  }
+  &__txt {
+    width: 491px;
+    @include font($black, 20px, 400);
+    line-height: 30px;
+  }
+  &__title-sm {
+    width: 96px;
+    @include font($black, 20px, 600);
+    line-height: 30px;
+  }
+  &__img {
+    width: 632px;
+  }
+  &__span {
+    text-decoration: underline;
+  }
+}
+
+.cards {
+  &__section {
+    background-color: $white_2;
+    padding: 120px 115px 147px;
+  }
+  &__wrapper {
+    width: 1210px;
+    margin: 0 auto;
+  }
+  &__title {
+    width: 890px;
+    @include font($black, 50px, 600);
+    line-height: 1.2;
+    margin: 0 auto;
+  }
+  &__wrapp {
+    margin-top: 55px;
+  }
+}
+
+.card {
+  width: 330px;
+  &__title {
+    @include font($black, 25px, 600);
+    line-height: 1.4;
+  }
+  &__txt {
+    @include font($black, 18px, 400);
+    line-height: 1.38;
+  }
+}
+
+.cards {
+  &__section-2 {
+    padding: 154px 45px 217px;
+  }
+  &__wrapper-2 {
+    width: 1320px;
+    margin: 0 auto;
+  }
+  &__title-2 {
+    width: 1287px;
+    @include font($black, 50px, 600);
+    line-height: 1.2;
+    margin: 0 auto;
+  }
+  &__wrapp-2 {
+    margin-top: 55px;
+  }
+}
+
+.card-2 {
+  width: 440px;
+  &__title-2 {
+    @include font($black, 25px, 600);
+    line-height: 1.4;
+  }
+  &__txt-2 {
+    @include font($black, 18px, 400);
+    line-height: 1.38;
+  }
+  &__img-1 {
+    width: 144px;
+    height: 200px;
+  }
+  &__img-2 {
+    width: 215px;
+    height: 200px;
+  }
+  &__img-3 {
+    width: 195px;
+    height: 200px;
+  }
+  &__padd-1 {
+    padding: 50px 31px 0 0;
+  }
+  &__padd-2 {
+    padding: 50px 31px 0 0;
+  }
+  &__padd-3 {
+    padding: 50px 3px 0 0;
+  }
+  &__title {
+    @include font($black, 30px, 600);
+    line-height: 1.33;
+  }
+  &__txt {
+    @include font($black, 20px, 400);
+    line-height: 1.5;
+  }
+}

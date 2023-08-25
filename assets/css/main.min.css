@@ -140,6 +140,13 @@ q:after {
           flex-direction: column;
 }
 
+.fd_rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .ai_center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -170,6 +177,18 @@ q:after {
 .jc_around {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.gap30 {
+  gap: 30px;
+}
+
+.gap23 {
+  gap: 23px;
+}
+
+.gap40 {
+  gap: 40px;
 }
 
 @font-face {
@@ -235,4 +254,227 @@ body {
   font-size: 16px;
   font-weight: 600;
   border: none;
+}
+
+.main__container {
+  padding: 97px 0 192px;
+}
+.main__container .localize__wrap {
+  padding: 0 20px;
+  width: 1290px;
+  margin: 0 auto;
+}
+.main__container .localize__wrap .localize__wrap-col {
+  gap: 50px;
+}
+.main__container .localize__wrap .localize__wrap-col h1 {
+  width: 552px;
+  color: #000000;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.main__container .localize__wrap .localize__wrap-col .localize__txt {
+  width: 471px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+}
+.main__container .localize__wrap .localize__wrap-col .localize__btn-wrap {
+  gap: 10px;
+}
+.main__container .localize__wrap .localize__wrap-col .localize__btn-wrap .localize__btn-free {
+  width: 160px;
+  height: 60px;
+  background: #ff6336;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+.main__container .localize__wrap .localize__wrap-col .localize__btn-wrap .localize__btn-demo {
+  width: 160px;
+  height: 60px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.main__container .localize__wrap .localize__wrap-col .localize__text {
+  width: 369px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+}
+.main__container .localize__wrap .localize__img {
+  width: 695px;
+}
+.main__container .localize__wrap .localize__img img {
+  width: 100%;
+  height: auto;
+}
+
+.company {
+  width: 100%;
+  padding: 108px 0 104px;
+  background: #ff9c7d;
+  display: inline-block;
+}
+.company__title {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 600;
+  width: 720px;
+  line-height: 1.2;
+}
+.company__logo {
+  width: 1290px;
+}
+.company__wrap {
+  gap: 70px;
+}
+
+.process {
+  width: 1330px;
+  padding: 0 20px 250px;
+  margin: 0 auto;
+}
+.process__top {
+  padding-top: 90px;
+}
+.process__bottom {
+  padding: 0 0 150px;
+}
+.process__title {
+  width: 493px;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.process__txt {
+  width: 491px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.process__title-sm {
+  width: 96px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.process__img {
+  width: 632px;
+}
+.process__span {
+  text-decoration: underline;
+}
+
+.cards__section {
+  background-color: #fff8e4;
+  padding: 120px 115px 147px;
+}
+.cards__wrapper {
+  width: 1210px;
+  margin: 0 auto;
+}
+.cards__title {
+  width: 890px;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+.cards__wrapp {
+  margin-top: 55px;
+}
+
+.card {
+  width: 330px;
+}
+.card__title {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.card__txt {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.38;
+}
+
+.cards__section-2 {
+  padding: 154px 45px 217px;
+}
+.cards__wrapper-2 {
+  width: 1320px;
+  margin: 0 auto;
+}
+.cards__title-2 {
+  width: 1287px;
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 auto;
+}
+.cards__wrapp-2 {
+  margin-top: 55px;
+}
+
+.card-2 {
+  width: 440px;
+}
+.card-2__title-2 {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.card-2__txt-2 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.38;
+}
+.card-2__img-1 {
+  width: 144px;
+  height: 200px;
+}
+.card-2__img-2 {
+  width: 215px;
+  height: 200px;
+}
+.card-2__img-3 {
+  width: 195px;
+  height: 200px;
+}
+.card-2__padd-1 {
+  padding: 50px 31px 0 0;
+}
+.card-2__padd-2 {
+  padding: 50px 31px 0 0;
+}
+.card-2__padd-3 {
+  padding: 50px 3px 0 0;
+}
+.card-2__title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.card-2__txt {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }

@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.fd_rev {
+  flex-direction: row-reverse;
+}
+
 .ai_center {
   align-items: center;
 }
@@ -30,4 +34,15 @@
 
 .jc_around {
   justify-content: space-around;
+}
+.gap30 {
+  gap: 30px;
+}
+
+.gap23 {
+  gap: 23px;
+}
+
+.gap40 {
+  gap: 40px;
 }
