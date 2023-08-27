@@ -34,7 +34,7 @@ body {
   max-width: 1330px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 25px;
+  padding: 0 20px;
 }
 
 .header__wrap {
@@ -301,5 +301,123 @@ body {
     @include font($black, 15px, 400);
     line-height: 1.66;
     letter-spacing: 0.75px;
+  }
+}
+
+.tools {
+  &__wrap {
+    padding: 165px 153px 162px;
+  }
+  &__title {
+    width: 791px;
+    @include font($black, 65px, 600);
+    line-height: 1.15;
+  }
+  &__txt {
+    width: 539px;
+    @include font($black, 25px, 400);
+    line-height: 1.2;
+    padding-bottom: 25px;
+  }
+  &__img {
+    width: 1023px;
+    height: 445px;
+    margin-bottom: 32px;
+  }
+  &__btn {
+    @include btn(193px, 60px, $orange);
+    @include font($white, 16px, 600);
+    border: none;
+    line-height: 0.6;
+  }
+}
+
+.ease {
+  width: 100%;
+  padding: 119px 0 161px;
+  background: #ff9c7d;
+  display: inline-block;
+  &__title {
+    width: 784px;
+    @include font($black, 65px, 600);
+    line-height: 1.15;
+    margin-bottom: 29px;
+  }
+  &__txt {
+    width: 438px;
+    @include font($black, 20px, 400);
+    line-height: 1.5;
+    margin-bottom: 54px;
+  }
+  &__btn {
+    @include btn(160px, 60px, $black);
+    @include font($white, 17px, 600);
+    border: none;
+    line-height: 3.52;
+  }
+}
+
+.footer {
+  padding: 42px 0 93px;
+  &__wrapper {
+    .footer__wrapp {
+      border-bottom: 1px solid $black;
+      padding-bottom: 95px;
+    }
+  }
+
+  &__case {
+    width: 370px;
+  }
+  &__title {
+    width: 257px;
+    @include font($black, 40px, 600);
+    line-height: 1.25;
+    margin-bottom: 28px;
+  }
+  &__img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 31px;
+  }
+  &__logo {
+    width: 80px;
+    height: 32px;
+    margin-bottom: 11px;
+  }
+  &__txt {
+    width: 290px;
+    @include font($black, 20px, 400);
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  &__sub-title {
+    @include font($black, 20px, 600);
+    line-height: 1.5;
+  }
+  &__info {
+    width: 850px;
+  }
+  &__info-content {
+    width: 187px;
+  }
+  &__info-title {
+    @include font($black, 20px, 600);
+    line-height: 1.25;
+    margin-bottom: 21px;
+  }
+  &__wrapp-bottom {
+    margin: 48px 0;
+  }
+  &__bottom-txt {
+    width: 301px;
+    @include font($black, 12px, 400);
+    line-height: 1.25;
+  }
+  &__bottom-text {
+    width: 109px;
+    @include font($black, 12px, 400);
+    line-height: 1.25;
+    margin-right: 76px;
   }
 }
