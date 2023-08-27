@@ -206,7 +206,7 @@ body {
 }
 
 .card-2 {
-  width: 440px;
+  width: 439px;
   &__title-2 {
     @include font($black, 25px, 600);
     line-height: 1.4;
@@ -228,10 +228,10 @@ body {
     height: 200px;
   }
   &__padd-1 {
-    padding: 50px 31px 0 0;
+    padding: 50px 30px 0 0;
   }
   &__padd-2 {
-    padding: 50px 31px 0 0;
+    padding: 50px 30px 0 0;
   }
   &__padd-3 {
     padding: 50px 3px 0 0;
