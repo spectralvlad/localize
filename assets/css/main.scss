@@ -25,11 +25,6 @@ body {
   font-family: "Graphik LCG";
 }
 
-.header {
-  padding: 34px 0;
-  border-bottom: 1px solid $light_gray;
-}
-
 .container {
   max-width: 1330px;
   width: 100%;
@@ -37,77 +32,73 @@ body {
   padding: 0 20px;
 }
 
-.header__wrap {
-  gap: 25px;
-  .header__nav-wrap {
+.header {
+  padding: 34px 0;
+  border-bottom: 1px solid $light_gray;
+  &__p0 {
+    padding: 0;
+  }
+  &__nav-wrap {
     width: 665px;
     gap: 20px;
   }
-  .header__logo {
+  &__logo {
     max-width: 130px;
   }
-  .header__ul {
+  &__ul {
     gap: 40px;
     font-size: $fs_15;
     line-height: $lh_20;
   }
-  .header__btn-wrap {
-    gap: 10px;
-    .header__btn-login {
-      @include btn(120px, 45px, $white);
-      @include font($black, 16px, 600);
-      border: 1px solid $black_gray;
-    }
-    .header__btn-free {
-      @include btn(120px, 45px, $orange);
-      @include font($white, 16px, 600);
-      border: none;
-    }
+  &__btn-login {
+    @include btn(120px, 45px, $white);
+    @include font($black, 16px, 600);
+    border: 1px solid $black_gray;
+  }
+  &__btn-free {
+    @include btn(120px, 45px, $orange);
+    @include font($white, 16px, 600);
+    border: none;
   }
 }
 
-.main__container {
+.localize {
   padding: 97px 0 192px;
-  .localize__wrap {
-    padding: 0 20px;
+  &__wrap {
     width: 1290px;
     margin: 0 auto;
-    .localize__wrap-col {
-      gap: 50px;
-      h1 {
-        width: 552px;
-        @include font($black, 65px, 600);
-        line-height: 70px;
-      }
-      .localize__txt {
-        width: 471px;
-        @include font($black, 25px, 400);
-        line-height: 35px;
-      }
-      .localize__btn-wrap {
-        gap: 10px;
-        .localize__btn-free {
-          @include btn(160px, 60px, $orange);
-          @include font($white, 16px, 600);
-          border: none;
-        }
-        .localize__btn-demo {
-          @include btn(160px, 60px, $white);
-          @include font($black, 16px, 600);
-          border: 1px solid $black_gray;
-        }
-      }
-      .localize__text {
-        width: 369px;
-        @include font($black, 15px, 400);
-      }
+  }
+  &__wrap-col {
+    h1 {
+      width: 552px;
+      @include font($black, 65px, 600);
+      line-height: 70px;
     }
-    .localize__img {
-      width: 695px;
-      img {
-        width: 100%;
-        height: auto;
-      }
+  }
+  &__txt {
+    width: 471px;
+    @include font($black, 25px, 400);
+    line-height: 35px;
+  }
+  &__btn-free {
+    @include btn(160px, 60px, $orange);
+    @include font($white, 16px, 600);
+    border: none;
+  }
+  &__btn-demo {
+    @include btn(160px, 60px, $white);
+    @include font($black, 16px, 600);
+    border: 1px solid $black_gray;
+  }
+  &__text {
+    width: 369px;
+    @include font($black, 15px, 400);
+  }
+  &__img {
+    width: 695px;
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -132,7 +123,7 @@ body {
 
 .process {
   width: 1330px;
-  padding: 0 20px 250px;
+  padding: 0 0 250px;
   margin: 0 auto;
   &__top {
     padding-top: 90px;

@@ -179,8 +179,16 @@ q:after {
       justify-content: space-around;
 }
 
+.gap10 {
+  gap: 10px;
+}
+
 .gap15 {
   gap: 15px;
+}
+
+.gap25 {
+  gap: 25px;
 }
 
 .gap30 {
@@ -201,6 +209,10 @@ q:after {
 
 .gap40 {
   gap: 40px;
+}
+
+.gap50 {
+  gap: 50px;
 }
 
 .gap67 {
@@ -225,11 +237,6 @@ body {
   font-family: "Graphik LCG";
 }
 
-.header {
-  padding: 34px 0;
-  border-bottom: 1px solid #cccccc;
-}
-
 .container {
   max-width: 1330px;
   width: 100%;
@@ -237,25 +244,26 @@ body {
   padding: 0 20px;
 }
 
-.header__wrap {
-  gap: 25px;
+.header {
+  padding: 34px 0;
+  border-bottom: 1px solid #cccccc;
 }
-.header__wrap .header__nav-wrap {
+.header__p0 {
+  padding: 0;
+}
+.header__nav-wrap {
   width: 665px;
   gap: 20px;
 }
-.header__wrap .header__logo {
+.header__logo {
   max-width: 130px;
 }
-.header__wrap .header__ul {
+.header__ul {
   gap: 40px;
   font-size: 15px;
   line-height: 20px;
 }
-.header__wrap .header__btn-wrap {
-  gap: 10px;
-}
-.header__wrap .header__btn-wrap .header__btn-login {
+.header__btn-login {
   width: 120px;
   height: 45px;
   background: #ffffff;
@@ -264,7 +272,7 @@ body {
   font-weight: 600;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.header__wrap .header__btn-wrap .header__btn-free {
+.header__btn-free {
   width: 120px;
   height: 45px;
   background: #ff6336;
@@ -274,35 +282,28 @@ body {
   border: none;
 }
 
-.main__container {
+.localize {
   padding: 97px 0 192px;
 }
-.main__container .localize__wrap {
-  padding: 0 20px;
+.localize__wrap {
   width: 1290px;
   margin: 0 auto;
 }
-.main__container .localize__wrap .localize__wrap-col {
-  gap: 50px;
-}
-.main__container .localize__wrap .localize__wrap-col h1 {
+.localize__wrap-col h1 {
   width: 552px;
   color: #000000;
   font-size: 65px;
   font-weight: 600;
   line-height: 70px;
 }
-.main__container .localize__wrap .localize__wrap-col .localize__txt {
+.localize__txt {
   width: 471px;
   color: #000000;
   font-size: 25px;
   font-weight: 400;
   line-height: 35px;
 }
-.main__container .localize__wrap .localize__wrap-col .localize__btn-wrap {
-  gap: 10px;
-}
-.main__container .localize__wrap .localize__wrap-col .localize__btn-wrap .localize__btn-free {
+.localize__btn-free {
   width: 160px;
   height: 60px;
   background: #ff6336;
@@ -311,7 +312,7 @@ body {
   font-weight: 600;
   border: none;
 }
-.main__container .localize__wrap .localize__wrap-col .localize__btn-wrap .localize__btn-demo {
+.localize__btn-demo {
   width: 160px;
   height: 60px;
   background: #ffffff;
@@ -320,16 +321,16 @@ body {
   font-weight: 600;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.main__container .localize__wrap .localize__wrap-col .localize__text {
+.localize__text {
   width: 369px;
   color: #000000;
   font-size: 15px;
   font-weight: 400;
 }
-.main__container .localize__wrap .localize__img {
+.localize__img {
   width: 695px;
 }
-.main__container .localize__wrap .localize__img img {
+.localize__img img {
   width: 100%;
   height: auto;
 }
@@ -356,7 +357,7 @@ body {
 
 .process {
   width: 1330px;
-  padding: 0 20px 250px;
+  padding: 0 0 250px;
   margin: 0 auto;
 }
 .process__top {
