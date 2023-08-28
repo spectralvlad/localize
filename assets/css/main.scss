@@ -35,9 +35,6 @@ body {
 .header {
   padding: 34px 0;
   border-bottom: 1px solid $light_gray;
-  &__p0 {
-    padding: 0;
-  }
   &__nav-wrap {
     width: 665px;
     gap: 20px;
@@ -65,18 +62,18 @@ body {
 .localize {
   padding: 97px 0 192px;
   &__wrap {
-    width: 1290px;
+    max-width: 1290px;
     margin: 0 auto;
   }
   &__wrap-col {
     h1 {
-      width: 552px;
+      max-width: 552px;
       @include font($black, 65px, 600);
       line-height: 70px;
     }
   }
   &__txt {
-    width: 471px;
+    max-width: 471px;
     @include font($black, 25px, 400);
     line-height: 35px;
   }
@@ -91,13 +88,13 @@ body {
     border: 1px solid $black_gray;
   }
   &__text {
-    width: 369px;
+    max-width: 369px;
     @include font($black, 15px, 400);
   }
   &__img {
-    width: 695px;
+    max-width: 695px;
     img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
     }
   }
@@ -107,14 +104,13 @@ body {
   width: 100%;
   padding: 108px 0 104px;
   background: #ff9c7d;
-  display: inline-block;
   &__title {
     @include font($black, 35px, 600);
-    width: 720px;
+    max-width: 720px;
     line-height: 1.2;
   }
   &__logo {
-    width: 1290px;
+    max-width: 1290px;
   }
   &__wrap {
     gap: 70px;
@@ -122,7 +118,7 @@ body {
 }
 
 .process {
-  width: 1330px;
+  max-width: 1330px;
   padding: 0 0 250px;
   margin: 0 auto;
   &__top {
@@ -132,22 +128,26 @@ body {
     padding: 0 0 150px;
   }
   &__title {
-    width: 493px;
+    max-width: 493px;
     @include font($black, 50px, 600);
     line-height: 1.2;
   }
   &__txt {
-    width: 491px;
+    max-width: 491px;
     @include font($black, 20px, 400);
     line-height: 30px;
   }
   &__title-sm {
-    width: 96px;
+    max-width: 96px;
     @include font($black, 20px, 600);
     line-height: 30px;
   }
   &__img {
-    width: 632px;
+    max-width: 632px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   &__span {
     text-decoration: underline;
@@ -160,11 +160,11 @@ body {
     padding: 120px 115px 147px;
   }
   &__wrapper {
-    width: 1210px;
+    max-width: 1210px;
     margin: 0 auto;
   }
   &__title {
-    width: 890px;
+    max-width: 890px;
     @include font($black, 50px, 600);
     line-height: 1.2;
     margin: 0 auto;
@@ -175,7 +175,7 @@ body {
 }
 
 .card {
-  width: 330px;
+  max-width: 330px;
   &__title {
     @include font($black, 25px, 600);
     line-height: 1.4;
@@ -190,12 +190,12 @@ body {
   &__section-2 {
     padding: 154px 45px 217px;
   }
-  &__wrapper-2 {
-    width: 1320px;
+  &__wrapp-2 {
+    max-width: 1320px;
     margin: 0 auto;
   }
   &__title-2 {
-    width: 1287px;
+    max-width: 1287px;
     @include font($black, 50px, 600);
     line-height: 1.2;
     margin: 0 auto;
@@ -206,25 +206,28 @@ body {
 }
 
 .card-2 {
-  width: 439px;
+  max-width: 439px;
   &__title-2 {
     @include font($black, 25px, 600);
     line-height: 1.4;
+  }
+  &__txt {
+    max-width: 407px;
   }
   &__txt-2 {
     @include font($black, 18px, 400);
     line-height: 1.38;
   }
   &__img-1 {
-    width: 144px;
+    max-width: 144px;
     height: 200px;
   }
   &__img-2 {
-    width: 215px;
+    max-width: 215px;
     height: 200px;
   }
   &__img-3 {
-    width: 195px;
+    max-width: 195px;
     height: 200px;
   }
   &__padd-1 {
@@ -248,7 +251,7 @@ body {
 
 .photo {
   background: $cyan;
-  width: 100%;
+  max-width: 100%;
   padding: 53px 75px 105px;
   &__main-txt {
     max-width: 920px;
@@ -261,31 +264,31 @@ body {
     line-height: 1.66;
   }
   &__photo-man {
-    width: 310px;
+    max-width: 310px;
     height: 310px;
   }
 }
 
 .software {
   background: $beige;
-  width: 100%;
+  max-width: 100%;
   padding: 70px 75px 84px;
   &__img {
-    width: 176px;
+    max-width: 176px;
     height: 154px;
   }
   &__title {
-    width: 461px;
+    max-width: 461px;
     @include font($black, 35px, 600);
     line-height: 1.42;
   }
   &__wrapper-logo {
-    width: 481px;
+    max-width: 481px;
     padding: 30px 62px 22px 71px;
     border-left: 1px solid $black;
   }
   &__logo-star {
-    width: 128px;
+    max-width: 128px;
     height: 20px;
   }
   &__txt {
@@ -300,19 +303,21 @@ body {
     padding: 165px 153px 162px;
   }
   &__title {
-    width: 791px;
+    max-width: 791px;
     @include font($black, 65px, 600);
     line-height: 1.15;
   }
   &__txt {
-    width: 539px;
+    max-width: 539px;
     @include font($black, 25px, 400);
     line-height: 1.2;
     padding-bottom: 25px;
   }
   &__img {
-    width: 1023px;
-    height: 445px;
+    max-width: 1023px;
+    width: 100%;
+    height: auto;
+
     margin-bottom: 32px;
   }
   &__btn {
@@ -329,13 +334,13 @@ body {
   background: #ff9c7d;
   display: inline-block;
   &__title {
-    width: 784px;
+    max-width: 784px;
     @include font($black, 65px, 600);
     line-height: 1.15;
     margin-bottom: 29px;
   }
   &__txt {
-    width: 438px;
+    max-width: 438px;
     @include font($black, 20px, 400);
     line-height: 1.5;
     margin-bottom: 54px;
@@ -358,26 +363,26 @@ body {
   }
 
   &__case {
-    width: 370px;
+    max-width: 370px;
   }
   &__title {
-    width: 257px;
+    max-width: 257px;
     @include font($black, 40px, 600);
     line-height: 1.25;
     margin-bottom: 28px;
   }
   &__img {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     margin-bottom: 31px;
   }
   &__logo {
-    width: 80px;
+    max-width: 80px;
     height: 32px;
     margin-bottom: 11px;
   }
   &__txt {
-    width: 290px;
+    max-width: 290px;
     @include font($black, 20px, 400);
     line-height: 1.5;
     margin-bottom: 15px;
@@ -387,10 +392,10 @@ body {
     line-height: 1.5;
   }
   &__info {
-    width: 850px;
+    max-width: 850px;
   }
   &__info-content {
-    width: 187px;
+    max-width: 187px;
   }
   &__info-title {
     @include font($black, 20px, 600);
@@ -401,12 +406,12 @@ body {
     margin: 48px 0;
   }
   &__bottom-txt {
-    width: 301px;
+    max-width: 301px;
     @include font($black, 12px, 400);
     line-height: 1.25;
   }
   &__bottom-text {
-    width: 109px;
+    max-width: 109px;
     @include font($black, 12px, 400);
     line-height: 1.25;
     margin-right: 76px;
