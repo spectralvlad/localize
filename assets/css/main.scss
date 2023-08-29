@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: "Graphik LCG";
+  font-family: "Graphik LCG", sans-serif;
 }
 
 .container {
@@ -30,6 +30,14 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.page__wrap {
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .header {
@@ -60,7 +68,7 @@ body {
 }
 
 .localize {
-  padding: 97px 0 192px;
+  padding: 97px 0 0;
   &__wrap {
     max-width: 1290px;
     margin: 0 auto;
@@ -119,8 +127,9 @@ body {
 
 .process {
   max-width: 1330px;
-  padding: 0 0 250px;
   margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 100px;
   &__top {
     padding-top: 90px;
   }
@@ -263,9 +272,9 @@ body {
     @include font($black, 15px, 400);
     line-height: 1.66;
   }
-  &__photo-man {
+  &__img {
     max-width: 310px;
-    height: 310px;
+    width: 100%;
   }
 }
 
