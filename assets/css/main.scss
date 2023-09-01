@@ -456,6 +456,7 @@ main {
   .localize {
     padding: 20px 20px 0;
     &__wrap-col {
+      max-width: 49%;
       gap: 10px;
       h1 {
         max-width: 220px;
@@ -484,7 +485,7 @@ main {
       padding-bottom: 15px;
     }
     &__img {
-      max-width: 220px;
+      max-width: 49%;
       img {
         max-width: 100%;
         height: auto;
