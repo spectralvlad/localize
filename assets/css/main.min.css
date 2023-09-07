@@ -290,7 +290,7 @@ main {
 }
 
 .localize {
-  padding: 97px 0 0;
+  padding: 97px 20;
 }
 .localize__wrap {
   max-width: 1290px;
@@ -365,13 +365,7 @@ main {
   max-width: 1330px;
   margin: 0 auto;
   min-height: 100vh;
-  padding-bottom: 100px;
-}
-.process__top {
-  padding-top: 90px;
-}
-.process__bottom {
-  padding: 0 0 150px;
+  padding: 100px 0 150px;
 }
 .process__title {
   max-width: 493px;
@@ -747,11 +741,22 @@ main {
   .header__btn-wrap {
     margin: 0 auto;
   }
+  .localize__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .localize {
     padding: 20px 20px 0;
   }
   .localize__wrap-col {
-    max-width: 49%;
     gap: 10px;
   }
   .localize__wrap-col h1 {
@@ -762,7 +767,6 @@ main {
     line-height: 1;
   }
   .localize__txt {
-    max-width: 220px;
     color: #000000;
     font-size: 12px;
     font-weight: 400;
@@ -787,25 +791,22 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.5);
   }
   .localize__text {
-    max-width: 180px;
     color: #000000;
     font-size: 12px;
     font-weight: 400;
     padding-bottom: 15px;
   }
-  .localize__img {
-    max-width: 49%;
-  }
   .localize__img img {
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
   }
   .company {
     padding: 20px 0 20px;
   }
   .company__title {
     color: #000000;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     max-width: 300px;
     line-height: 1.2;
@@ -815,5 +816,79 @@ main {
   }
   .company__wrap {
     gap: 15px;
+  }
+  .process__title,
+  .cards__title,
+  .cards__title-2,
+  .ease__title,
+  .footer__title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .process__title-sm,
+  .card__title,
+  .card-2__title,
+  .software__title,
+  .tools__title,
+  .footer__sub-title,
+  .footer__info-title {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  .footer__txt,
+  .process__txt,
+  .card__txt,
+  .card-2__txt,
+  .photo__main-txt,
+  .tools__txt,
+  .ease__txt,
+  .footer__info-txt,
+  .footer__bottom-txt,
+  .footer__bottom-text {
+    color: #000000;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .process {
+    max-width: 300px;
+    padding: 25px 0 35px;
+    min-height: 65vh;
+  }
+  .card {
+    max-width: 120px;
+  }
+  .photo__txt-sm {
+    color: #000000;
+    font-size: 5px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  .software__wrapper-logo {
+    padding: 30px 0 22px;
+    border-left: none;
+  }
+  .tools__btn {
+    width: 90px;
+    height: 15px;
+    background: #ff6336;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 600;
+    border: none;
+  }
+  .ease__btn {
+    width: 90px;
+    height: 25px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 600;
+    border: none;
+    line-height: 2.52;
   }
 }
