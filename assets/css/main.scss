@@ -68,7 +68,7 @@ main {
 }
 
 .localize {
-  padding: 97px 20;
+  padding: 97px 20px;
   &__wrap {
     max-width: 1290px;
     margin: 0 auto;
@@ -420,6 +420,301 @@ main {
   }
 }
 
+@media (max-width: 1024px) {
+  .page__wrap {
+    min-height: 100%;
+  }
+  .header {
+    padding: 20px 0;
+    &__logo {
+      max-width: 100px;
+    }
+    &__ul {
+      gap: 20px;
+      @include font($black, 16px, 400);
+    }
+    &__btn-login {
+      @include btn(110px, 26px, $white);
+      @include font($black, 16px, 600);
+      border: 1px solid $black_gray;
+    }
+    &__btn-free {
+      @include btn(110px, 26px, $orange);
+      @include font($white, 16px, 600);
+      border: none;
+    }
+    &__btn-wrap {
+      margin: 0 auto;
+    }
+  }
+  .localize {
+    padding: 20px 20px 0;
+    &__wrap-col {
+      gap: 10px;
+      h1 {
+        max-width: 365px;
+        @include font($black, 44px, 600);
+        line-height: 1;
+      }
+    }
+    &__txt {
+      @include font($black, 20px, 400);
+      line-height: 1.1;
+    }
+    &__btn-free {
+      @include btn(120px, 26px, $orange);
+      @include font($white, 16px, 600);
+      border: none;
+    }
+    &__btn-demo {
+      @include btn(120px, 26px, $white);
+      @include font($black, 16px, 600);
+      border: 1px solid $black_gray;
+    }
+    &__text {
+      @include font($black, 20px, 400);
+      padding-bottom: 25px;
+    }
+    &__img {
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .company {
+    padding: 20px 0 20px;
+    &__title {
+      @include font($black, 32px, 600);
+      max-width: 600px;
+      line-height: 1.2;
+    }
+    &__logo {
+      max-width: 440px;
+    }
+    &__wrap {
+      gap: 25px;
+    }
+  }
+  .process__title,
+  .cards__title,
+  .cards__title-2,
+  .ease__title,
+  .footer__title {
+    @include font($black, 32px, 600);
+    line-height: 1;
+  }
+
+  .process__title-sm,
+  .card__title,
+  .card-2__title,
+  .software__title,
+  .tools__title,
+  .footer__sub-title,
+  .footer__info-title {
+    @include font($black, 26px, 600);
+    line-height: 1;
+  }
+
+  .footer__txt,
+  .process__txt,
+  .card__txt,
+  .card-2__txt,
+  .photo__main-txt,
+  .tools__txt,
+  .ease__txt,
+  .footer__info-txt,
+  .footer__bottom-txt,
+  .footer__bottom-text {
+    @include font($black, 16px, 400);
+    line-height: 1.2;
+  }
+  .process {
+    max-width: 300px;
+    padding: 25px 0 35px;
+  }
+
+  .card {
+    max-width: 300px;
+  }
+
+  .photo__txt-sm {
+    @include font($black, 12px, 400);
+    line-height: 1.2;
+  }
+
+  .software__wrapper-logo {
+    padding: 30px 62px 22px 71px;
+    border-left: 1px solid $black;
+  }
+
+  .tools__btn {
+    @include btn(170px, 26px, $orange);
+    @include font($white, 16px, 600);
+    border: none;
+  }
+
+  .ease__btn {
+    @include btn(170px, 38px, $black);
+    @include font($white, 16px, 600);
+    border: none;
+    line-height: 2.52;
+  }
+
+  .footer {
+    padding: 42px 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__wrap {
+    min-height: 100%;
+  }
+  .header {
+    padding: 20px 0;
+    &__logo {
+      max-width: 100px;
+    }
+    &__ul {
+      gap: 20px;
+      @include font($black, 12px, 400);
+    }
+    &__btn-login {
+      @include btn(80px, 20px, $white);
+      @include font($black, 12px, 600);
+      border: 1px solid $black_gray;
+    }
+    &__btn-free {
+      @include btn(80px, 20px, $orange);
+      @include font($white, 12px, 600);
+      border: none;
+    }
+    &__btn-wrap {
+      margin: 0 auto;
+    }
+  }
+  .localize {
+    padding: 20px 20px 0;
+    &__wrap-col {
+      gap: 10px;
+      h1 {
+        max-width: 292px;
+        @include font($black, 33px, 600);
+        line-height: 1;
+      }
+    }
+    &__txt {
+      @include font($black, 16px, 400);
+      line-height: 1.1;
+    }
+    &__btn-free {
+      @include btn(90px, 20px, $orange);
+      @include font($white, 12px, 600);
+      border: none;
+    }
+    &__btn-demo {
+      @include btn(90px, 20px, $white);
+      @include font($black, 12px, 600);
+      border: 1px solid $black_gray;
+    }
+    &__text {
+      @include font($black, 16px, 400);
+      padding-bottom: 15px;
+    }
+    &__img {
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .company {
+    padding: 20px 0 20px;
+    &__title {
+      @include font($black, 26px, 600);
+      max-width: 500px;
+      line-height: 1.2;
+    }
+    &__logo {
+      max-width: 440px;
+    }
+    &__wrap {
+      gap: 20px;
+    }
+  }
+  .process__title,
+  .cards__title,
+  .cards__title-2,
+  .ease__title,
+  .footer__title {
+    @include font($black, 26px, 600);
+    line-height: 1;
+  }
+
+  .process__title-sm,
+  .card__title,
+  .card-2__title,
+  .software__title,
+  .tools__title,
+  .footer__sub-title,
+  .footer__info-title {
+    @include font($black, 20px, 600);
+    line-height: 1;
+  }
+
+  .footer__txt,
+  .process__txt,
+  .card__txt,
+  .card-2__txt,
+  .photo__main-txt,
+  .tools__txt,
+  .ease__txt,
+  .footer__info-txt,
+  .footer__bottom-txt,
+  .footer__bottom-text {
+    @include font($black, 12px, 400);
+    line-height: 1.2;
+  }
+  .process {
+    max-width: 300px;
+    padding: 25px 0 35px;
+    min-height: 65vh;
+  }
+
+  .card {
+    max-width: 120px;
+  }
+
+  .photo__txt-sm {
+    @include font($black, 8px, 400);
+    line-height: 1.2;
+  }
+
+  .software__wrapper-logo {
+    padding: 30px 0 22px;
+    border-left: none;
+  }
+
+  .tools__btn {
+    @include btn(125px, 20px, $orange);
+    @include font($white, 12px, 600);
+    border: none;
+  }
+
+  .ease__btn {
+    @include btn(125px, 32px, $black);
+    @include font($white, 12px, 600);
+    border: none;
+    line-height: 2.52;
+  }
+
+  .footer {
+    padding: 42px 0 0px;
+  }
+}
+
 @media (max-width: 480px) {
   .page__wrap {
     min-height: 100%;
@@ -566,5 +861,9 @@ main {
     @include font($white, 8px, 600);
     border: none;
     line-height: 2.52;
+  }
+
+  .footer {
+    padding: 42px 0 0px;
   }
 }
